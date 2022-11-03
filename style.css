@@ -186,6 +186,10 @@ section{
 .faq.active .faq-toggle{
     border-color:#fff;
 }
+.faq-text li span{
+    position: relative;
+    z-index: 10000;
+}
 .swiper {
     width: 80%;
     align-items: center;
