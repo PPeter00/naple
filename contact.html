@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <title>Naples Service Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html"><img class='logo' src="logo-removebg-preview(2).png" alt=""></a>
+        <a href=""><i class="fa-solid fa-square-envelope fa-2x message" id="message"></i></a>
+    </nav>
+    <div class="follow">
+        <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+        <a href=""><i class="fab fa-facebook fa-2x"></i></a>
+    </div>
+
+    <main>
+        <section class="contact" id="contact">
+            <h1 class="heading">Contact us</h1>
+           
+            <!--
+                action="https://formsubmit.co/info@naplesserviceguide.com"
+                 <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_subject" value="new message!!">
+            -->
+        
+            <div class="row">
+                <div class="image">
+                    <img src="pp.svg" alt="">
+                </div>
+                <form  id='form' method="POST">
+                    <h3>Get in touch</h3>
+                    <div class="inputBox">
+                        <span class="fas fa-user fa-2x"></span>
+                        <input type="text" name="name" placeholder="name" required>
+                    </div>
+                   
+                    <div class="inputBox">
+                        <span class="fas fa-envelope fa-2x"></span>
+                        <input type="email" name='email' placeholder="email" required>
+                    </div>
+                    <div class="inputBox">
+                        <span class="fa-solid fa-paper-plane fa-2x"></span>
+                        <textarea name="textarea" name='textarea' id="textarea" cols="6" rows="1" placeholder="Your message here..." required></textarea>
+                    </div>
+                    <input type="submit" name="submit" value="send message" class="btn" value='submit' id='submitBtn'>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+
+<footer>
+    <a href="tel:2393757468"><i class="fas fa-phone"></i>  Tel: (239) 375-7468</a>
+    <br>
+    <p> &copy; 2023 All Rights Reserved <span style="color:gray; font-weight: 900;">naplesserviceguide.com</span></p>
+    <br>
+    <p>Created by Paula Peter</p>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
