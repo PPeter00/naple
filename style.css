@@ -349,7 +349,7 @@ footer a{
 @media(max-width: 440px){
     .follow{
         top: 80px;
-        right: -5px;
+        right: 0;
         flex-direction: column;
     }
     .follow a i{
