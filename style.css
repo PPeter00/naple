@@ -47,7 +47,7 @@ nav a{
 .follow{
     display: flex;
     justify-content: flex-end;
-    position: fixed;
+    position: absolute;
     top: 15px;
     right: 60px;
     z-index: 100;
