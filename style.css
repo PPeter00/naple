@@ -88,9 +88,11 @@ header h1{
 */
 .faq-container{
     width: 60%;
+    max-width: 100%;
     margin: 130px auto 10px auto !important;
     align-self: center;
     justify-self: center;
+    position: relative;
 }
 .fa-phone:hover{
     cursor: pointer;
