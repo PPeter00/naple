@@ -1,6 +1,6 @@
 const toggles = document.querySelectorAll('.faq-toggle')
 const form = document.getElementById('form')
-const btnSubmit = document.getElementById('submitBtn')
+const btnSubmit = document.querySelector('.btn')
 
 toggles.forEach(toggle => {
     toggle.addEventListener('click', () => {
@@ -21,7 +21,7 @@ var swiper = new Swiper(".mySwiper", {
     keyboard: true,
   });
 
-  btnSubmit.addEventListener('click', () => {
+  btnSubmit.addEventListener('submit', () => {
     form.innerHTML = 
     `
     <h1 class="heading-contact">Thank you <br> for contacting us, <br>will get back to you <br> as soon as possible.</h1>
