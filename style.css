@@ -351,8 +351,9 @@ footer a{
 @media(max-width: 440px){
     .follow{
         top: 80px;
-        right: -1px;
+        right: -2px;
         flex-direction: column;
+        z-index: 2;
     }
     .follow a i{
         border-radius: 50%;
@@ -363,6 +364,7 @@ footer a{
     }
     .contact{
         max-width: 100%;
+        z-index: 1;
     }
     .contact .row{
         margin: 0;
