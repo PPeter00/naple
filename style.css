@@ -16,10 +16,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    min-width: 100vh;
-    min-height: 100vh;
     color: #fff;
-    position: relative;
 }
 body a{
     text-decoration: none;
@@ -341,7 +338,10 @@ footer a{
         font-size: 40px;
     }
     .faq-container{
-        max-width: 80% !important;
+        max-width: 90% !important;
+    }
+    .contact{
+        width: 90%;
     }
 }
 @media(max-width: 440px){
@@ -353,6 +353,12 @@ footer a{
     .follow a i{
         border-radius: 50%;
         background-color:rgba(128, 128, 128, 0.39);
+    }
+    .faq-container{
+        max-width: 100% !important;
+    }
+    .contact{
+        width: 100%;
     }
     .swiper {
         max-width: 95% !important;
