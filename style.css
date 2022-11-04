@@ -58,10 +58,14 @@ nav a{
 .message{
     padding: 20px 5px 20px 0;
     color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 .follow a{
     padding: 10px;
     color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 header{
@@ -84,17 +88,14 @@ header h1{
     font-size: 55px;
 }
 .faq-container{
-    max-width: 600px;
-    margin: 100px auto 0;
+    width: 60%;
+    margin: 130px auto 10px auto !important;
+    align-self: center;
+    justify-self: center;
+    position: relative;
 }
 .fa-phone:hover{
     cursor: pointer;
-}
-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 .faq{
     background-color: #24242434;
@@ -186,10 +187,6 @@ section{
 .faq.active .faq-toggle{
     border-color:#fff;
 }
-.faq-text li span{
-    position: relative;
-    z-index: 10000;
-}
 .swiper {
     width: 80%;
     align-items: center;
@@ -201,7 +198,9 @@ section{
     padding: 30px 0;
     text-align: center;
 }
-
+.swiper-wrapper {
+   align-items: center;
+}
   .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -220,6 +219,10 @@ section{
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+    -webkit-box-align: center;
+    box-align: center;
+    -webkit-box-pack: center;
+    box-pack: center;
   }
 
   .swiper-slide img {
@@ -239,7 +242,7 @@ footer{
     text-align: center;
     width: 100%;
     max-height: 300px;
-    color: #fff;
+    color: #000;
     margin-top: 20px;
     padding: 30px 0;
 }
@@ -248,35 +251,31 @@ footer p{
     padding: 0 10px;
 }
 footer a{
-    color:gray;
+    color:#fff;
 }
-
-.contact .row{
-    margin-top: 100px;
-    display: -webkit-box;
-    display: -ms-flexbox;
+.faq-text li span{
+    position:relative;
+    z-index: 1000;
+}
+.contact{
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-       flex-wrap: wrap;
-    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
 }
-.contact .row .image{
-    -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-        flex: 1 1 40rem;
-}
-.contact .row .image img{
-    width: 100%;
+.contact .row{
+    position: relative;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact .row form{
-    -webkit-box-flex: 1;
-       -ms-flex: 1 1 40rem;
-           flex: 1 1 40rem;
-    border: 0.1rem solid #242424;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    border: 0.2rem solid #999;
+    border-radius: 10px;
     padding: 2rem;
 }
 
@@ -308,6 +307,7 @@ footer a{
     text-transform: none;
     background: none;
     outline: none;
+    
 }
 .contact .row form .inputBox input:focus, textarea:focus{
     outline: none;
@@ -317,12 +317,16 @@ footer a{
     margin-top: 1rem;
     padding: 1rem 3rem;
     font-size: 1.8rem;
-    background: gray;
-    color:#242424;
+    background: #666;
+    color:#fff;
+    text-transform: uppercase;
     cursor: pointer;
-    text-transform: capitalize;
-    border-radius: 5px;
+    border-radius: 10px;
     align-self: center;
+}
+.btn:hover{
+    color: #999;
+    background-color: #ddd;
 }
 .heading-contact{
     display: block;
@@ -337,8 +341,10 @@ footer a{
     header h1{
         font-size: 40px;
     }
+    .faq-container{
+        max-width: 80% !important;
+    }
 }
-
 @media(max-width: 440px){
     .follow{
         top: 80px;
@@ -350,10 +356,13 @@ footer a{
         background-color:rgba(128, 128, 128, 0.39);
     }
     .swiper {
-        min-width: 100%;
+        max-width: 95% !important;
     }
     header h1{
         font-size: 30px;
+    }
+    .faq-container{
+        max-width: 90% !important;
     }
     
 }
