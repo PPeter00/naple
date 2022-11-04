@@ -94,7 +94,7 @@ header h1{
     justify-self: center;
     position: relative;
 }
-.fa-phone:hover{
+.faq-container a{
     cursor: pointer;
 }
 .faq{
@@ -148,6 +148,7 @@ header h1{
     padding: 5px 10px;
     color: var(--second-color);
     font-size: 18px;
+    cursor: pointer;
 }
 .faq-text li a:hover{
     color:#fff;
