@@ -265,6 +265,7 @@ footer a{
     align-items: center;
     margin-top: 90px;
     max-width: 100%;
+    position: relative;
 }
 .contact .row{
     width: 600px;
