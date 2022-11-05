@@ -31,6 +31,7 @@ nav{
     justify-content: space-between;
     max-width: 100%;
     padding: 0 20px;
+    margin-bottom: 80px;
     background: rgba(179, 176, 176, 0.438);
     background-size: cover;
     background-repeat: no-repeat;
@@ -87,15 +88,15 @@ header h1{
 }
 */
 .faq-container{
-    width: 60%;
-    max-width: 100%;
-    margin: 130px auto 10px auto !important;
+    max-width: 700px;
+    margin:0 auto !important;
     align-self: center;
     justify-self: center;
     position: relative;
 }
 .faq-container a{
     cursor: pointer;
+    color: #fff;
 }
 .faq{
     background-color: #24242434;
@@ -263,9 +264,7 @@ footer a{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 90px;
     max-width: 100%;
-    position: relative;
 }
 .contact .row{
     width: 600px;
@@ -345,10 +344,10 @@ footer a{
         font-size: 40px;
     }
     .faq-container{
-        max-width: 90% !important;
+        width: 100% !important;
     }
     .contact{
-        width: 90%;
+        width: 100%;
     }
 }
 @media(max-width: 440px){
@@ -361,17 +360,6 @@ footer a{
     .follow a i{
         border-radius: 50%;
         background-color:rgba(128, 128, 128, 0.39);
-    }
-    .faq-container{
-        max-width: 100% !important;
-    }
-    .contact{
-        max-width: 100%;
-        z-index: 1;
-    }
-    .contact .row{
-        margin: 0;
-        width: 100%;
     }
     .swiper {
         max-width: 95% !important;
