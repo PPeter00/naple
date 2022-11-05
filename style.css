@@ -345,10 +345,10 @@ footer a{
         font-size: 40px;
     }
     .faq-container{
-        width: 100% !important;
+        width: 90% !important;
     }
     .contact{
-        width: 100%;
+        width: 90%;
     }
 }
 @media(max-width: 440px){
@@ -367,6 +367,12 @@ footer a{
     }
     header h1{
         font-size: 30px;
+    }
+     .faq-container{
+        width: 100% !important;
+    }
+    .contact{
+        width: 100%;
     }
     
 }
